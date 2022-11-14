@@ -1,0 +1,83 @@
+/*
+Purpose: css for love and hate buttons
+Author: Travis Mann
+Date: 11/14/2022
+Inspiration: https://www.youtube.com/watch?v=6TYkDy54q4E&ab_channel=Hyperplexed
+ */
+
+/* format buttons */
+.card-swiper-buttons {
+    margin-top: 50vmin;
+    display: flex;
+    justify-content: space-around;
+    padding: 0vmin 4vmin;
+}
+
+/* shape buttons */
+.card-swiper-buttons > button {
+    font-size: 2.5vmin;
+    border: 0.4vmin solid rgb(200, 200, 200);
+    border-radius: 100%;
+    color: white;
+    background-color: transparent;
+    height: 7vmin;
+    width: 7vmin;
+    cursor: pointer;
+}
+
+/* make like button blue */
+#like-button {
+    color: rgb(33, 150, 243);
+    border-color: rgb(33, 150, 243);
+}
+
+/* like button hover effect */
+#like-button:hover {
+    border: 0.4vmin solid white;
+    background-color: rgb(33, 90, 243);
+}
+
+/* dislike button hover effect */
+#dislike-button:hover {
+    border: 0.4vmin solid white;
+    background-color: rgb(33, 90, 243);
+}
+
+/* format search bar */
+.input {
+    margin-top: 70vmin;
+}
+
+.keyword-input {
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size:2vmin;
+}
+
+.keyword-input[data-status="incorrect"] {
+    border-bottom: 2px solid red;
+}
+
+.icon {
+    font-size: 2.5vmin;
+    border-radius: 100%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.clear-icon {
+    color: white;
+}
+
+/* hover and focus effect */
+.clear-icon:hover {
+    background-color: rgb(33, 150, 243);
+}
+
+.search-icon:hover {
+    opacity: 60%;
+}

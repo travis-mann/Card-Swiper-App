@@ -1,0 +1,40 @@
+<!--- https://www.youtube.com/watch?v=6TYkDy54q4E&ab_channel=Hyperplexed --->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <!--- css for flair --->
+      <link rel="stylesheet" href="cardSwiper.css">
+      <link rel="stylesheet" href="input.css">
+  </head>
+  <body>
+    <!--- main cards to display --->
+    <div class="input">
+      <button class="search-icon icon" onclick="handleSearchClick()">&#128269;</button>
+      <label>
+        <input type="text" class="keyword-input" data-status="correct">
+      </label>
+      <button class="clear-icon icon" onclick="handleClearClick()">X</button>
+    </div>
+    <div class="card-swiper">
+      <div class="card-group" data-status="active">
+        <div class="little-card card" onclick="handleCardClick(this)"></div>
+        <div class="big-card card" onclick="handleCardClick(this)"></div>
+        <div class="little-card card" onclick="handleCardClick(this)"></div>
+        <div class="big-card card" onclick="handleCardClick(this)"></div>
+        <div class="little-card card" onclick="handleCardClick(this)"></div>
+        <div class="big-card card" onclick="handleCardClick(this)"></div>
+        <div class="little-card card" onclick="handleCardClick(this)"></div>
+        <div class="big-card card" onclick="handleCardClick(this)"></div>
+      </div>
+      <div class="card-swiper-buttons">
+        <button id="dislike-button" onclick="handleDislikeClick()">X</button>
+        <button id="like-button" onclick="handleLikeClick()">&#9825</button>
+      </div>
+    </div>
+    <!--- js for effects --->
+    <script src="index.js"></script>
+  </body>
+</html>
